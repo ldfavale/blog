@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="be-red white">
+        <ul class="no-list row center-xs middle-xs">
+          <li class="col-md" >
+            <h1 class="no-margin">Brand</h1>
+          </li>
+          <li class="col-md">
+            <%= link_to "Inicio", root_path %>
+          </li>
+          <li class="col-md">
+            Diseño
+          </li>
+          <li class="col-md">
+            Tecnologia
+          </li>
+          <li class="col-md">
+          </li>
+
+        </ul>
+      </nav>
+    </header>
+    <%= yield %>
+  </body>
+</html>
