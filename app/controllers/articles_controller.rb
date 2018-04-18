@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
 
 #POST /articles
   def create
-    @article = Article.new(title: params[:article][:title], :body params[:article][:body])
+    @article = Article.new(title: params[:article][:title], body: params[:article][:body])
 
     @article.save
     redirect_to @article
