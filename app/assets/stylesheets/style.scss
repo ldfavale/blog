@@ -2,17 +2,26 @@ html,body{
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
+
 a:visited{
   color: inherit;
   text-decoration: none;
 
+}
+.btn{
+  background-color: inherit;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.1em;
 }
 .no-margin{
   margin: 0px;
 }
 #logo{
   font-size: 1.2em;
-  
+
 }
 .be-red{
   background-color: #E74C3C;
@@ -22,4 +31,19 @@ a:visited{
 }
 .large-padding{
   padding: 10px 10px;
+}
+.field{
+  margin-top: 1em;
+}
+.form-control{
+  width:100%;
+  border: none;
+  border-bottom: 1px solid;
+  display: block;
+  padding: 10px 0;
+  font-size: 1em;
+}
+.form-holder{
+  width: 80%;
+  margin: 0 auto;
 }
